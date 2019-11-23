@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Commits</h1>
+    <div>
+      <% @pr_commits.each do |pr| %>
+        <%= "<p>#{pr[:sha]}</p>" %>
+      <% end %>
+    </div>
+  <button><a href="/">戻る</a></button>
+</body>
+</html>
