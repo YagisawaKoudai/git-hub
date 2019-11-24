@@ -4,20 +4,14 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <h1>Pull Request Info</h1>
-  <form action="/" method="POST">
-    <div>
-      アクセストークン:<input type="text" name="token" value="">
-    </div>
-    <div>
-      レポジトリ:<input type="text" name="repo" value="">
-    </div>
-    <div>
-      Pull Request ID:<input type="number" name="pr_id" value="">
-    </div>
-    <div>
-      <input type="submit" value="送信する">
-    </div>
-  </form>
+  <h1>Choose Mode</h1>
+  <ul>
+    <li>
+      <a href="/search_commits">PRのコミットハッシュ一覧を出力する</a>
+    </li>
+    <li>
+      <a href="/search_milestone">マイルストーンのPRリンク一覧を出力する</a>
+    </li>
+  </ul>
 </body>
 </html>
