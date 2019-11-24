@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
 </head>
 <body>
+  <button><a href="/search_commits">戻る</a></button>
   <h1>Commits</h1>
     <div>
       <% @pr_commits.each do |pr| %>
         <%= "<p>#{pr[:sha]}</p>" %>
       <% end %>
     </div>
-  <button><a href="/">戻る</a></button>
+  <p><a href="/">Homeに戻る</a></p>
 </body>
 </html>

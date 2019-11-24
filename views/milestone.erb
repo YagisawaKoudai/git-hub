@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <button><a href="/search_milestone">戻る</a></button>
+  <h1>PR Links in the Milestone</h1>
+    <div>
+      <% @milestone_prs.each do |pr| %>
+        <%= "<p>#{pr[:html_url]}</p>" %>
+      <% end %>
+    </div>
+  <p><a href="/">Homeに戻る</a></p>
+</body>
+</html>
