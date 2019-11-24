@@ -8,7 +8,7 @@
   <h1>Commits</h1>
     <div>
       <% @pr_commits.each do |pr| %>
-        <%= "<p>#{pr[:sha]}</p>" %>
+        <%= "<p style='margin: 0;'>#{pr[:sha]}</p>" %>
       <% end %>
     </div>
   <p><a href="/">Homeに戻る</a></p>
